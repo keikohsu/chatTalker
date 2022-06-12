@@ -1,0 +1,541 @@
+
+.container{
+    font-family: $font-family;
+    .go_top{
+      position: fixed;
+      background: url(images/top.png);
+      width: 71px;
+      height: 71px;
+      bottom: 3%;
+      right: 4%;
+    }
+    header{
+    position: absolute;
+    width: 100%;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 88px;
+        max-width: 1120px;
+        width: 100%;
+        padding: 0 16px;
+        margin: 0 auto;
+        & img{
+            width: 200px;
+        }
+        a{
+            background: #FF5D50;
+            color: #fff;
+            padding: 8px 32px;
+            border-radius: 20px;
+        }
+        @include pad-width{
+        border-bottom: 2px #FFD153 solid;
+        & img{
+          width: 145px;
+        }
+        }
+        
+    }
+    @include pad-width{
+        position: static;
+    }
+    }
+    .banner{
+        background-repeat: no-repeat;
+        width:100%;
+        height: 850px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg);
+        background-position: right top;
+        
+    @include pad-width{
+    background-image:none;
+    height: auto;
+    }
+    }
+    .row_box{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 1120px;
+        width: 100%;
+        margin: auto;
+        flex-wrap: wrap;
+        padding:0 16px;
+
+        & .people_img{
+        width: 50%;
+
+        & img{
+          background-size: contain;
+        height: 534px; 
+        width: 100%;
+        background-repeat: no-repeat;
+        z-index: 99;
+        
+        @include pad-width{
+        width: 100%;
+        height: 100%;
+        }
+        }
+
+    }
+
+    @include pad-width{
+    padding: 0 20px;
+    height: auto;
+    margin: 32px 0;
+
+    .people_img{
+        width: 100%;
+        height: 305px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 32px;
+        background-position: bottom;
+    }
+    }
+
+    }
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        font-family: $font-family;
+    & .title_one{
+        font-size: 18px;
+        color:$font-color-tiffany;
+        font-weight: bold;
+        }
+        & h2{
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 80px;
+            padding: 10px 0;
+            @include pad-width{
+              font-size: 32px;
+              line-height: 50px;
+            }
+            @include ph-width{
+                font-size: 32px;
+            }
+        }
+        @include pad-width{
+            justify-content: start;
+            width: 100%;
+        }
+    }
+    @include pad-width{
+      .go_top{
+          width: 50px;
+          height: 50px;
+          background-size: contain;
+        }
+    }
+    .h2_style{
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .section_1{
+    position: relative;
+    }
+    .box-icon{
+      display: flex;
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &::before{
+        position: absolute;
+        content: '';
+        background-image: url(images/ball01.svg);
+        width: 360px;
+        height: 360px;
+        left: -214px;
+        z-index: -9;
+      }
+      &::after{
+        position: absolute;
+        content: '';
+        background-image: url(images/ball02.svg);
+        height: 317px;
+        width: 317px;
+        right: 10px;
+        top: 822px;
+        z-index: -9;
+      }
+      
+      @include pad-width{
+        & .h2_style{
+          font-size: 28px;
+        }
+      }
+      & ul{
+      display: flex;
+      width: 100%;
+      margin: 48px 0 100px 0;
+      flex-wrap: wrap;
+        & li{
+          width: calc(100%/3);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          line-height: 30px;
+          padding: 0 67px;
+          text-align: center;
+        }
+        & img{
+          width: 90px;
+        }
+         & h3{
+          font-size: 24px;
+          margin: 24px 0;
+          font-weight: bold;
+         }
+         & p{
+           color: #747474;
+           font-weight: 100;
+         }
+       @include pad-width{
+
+         & img{
+           width: 50px;
+         }
+        & li{
+           width: 100%;
+         }
+        h3{
+          font-size: 18px;
+          margin: 16px 0;
+
+        }
+        p{
+          font-size: 16px;
+          margin-bottom: 24px;
+        }
+       }
+      }
+
+    }
+
+    // section2
+    .section_card{
+
+      .section_2_text{
+        font-size: 20px;
+        text-align: center;
+        line-height: 3;
+      }
+      .box-4{
+        width: 100%;
+        max-width: 1120px;
+        margin: auto;
+        & ul{
+          display: flex;
+          width: 100%;
+          flex-wrap: wrap;
+          justify-content: center;
+          li{
+            width: calc(100%/4 - 16px);
+            margin: 8px;
+            background: #fff;
+            box-shadow: 0px 2px 10px #00000014;
+            text-align: center;
+            border-radius: 20px;
+            & img{
+              border-top-left-radius: 20px;
+              width: 100%;
+              border-top-right-radius: 20px;
+            }
+            & h3{
+              color: #56C4C5;
+              font-weight: bold;
+              padding: 16px  ;
+            }
+            & p{
+              padding:0 16px 24px 16px;
+              line-height: 1.5;
+              font-size: 16px;
+            }
+            @include pc-width{
+              width: 35%;
+            }
+            @include pad-width{
+              width: 100%;
+              margin: 12px 57px;
+            }
+          }
+  
+        }
+      }
+    }
+
+    // section3
+    .section_3{
+      margin-top: 100px;
+      width: 100%;
+      max-width: 1120px;
+      margin:100px auto 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      & ul{
+        display: flex;
+        width: 60%;
+        flex-wrap: wrap;
+
+        & li{
+          padding: 32px;
+          width: 34%;
+          background: #fff;
+          -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+          height: 280px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0 47px 28px 0;
+          @include  pc-width{
+            margin: 0 23px 24px 23px;
+          }
+          @include  pad-width{
+            width: 100%;
+            margin: 0 74px 24px 74px;
+          }
+        & h3{
+          font-size: 18px;
+          font-weight: bold;
+          margin: 18px 0;
+        }
+        & img{
+          box-shadow: 0px 2px 10px #00000014;
+          width: 86px;
+          height: 86px;
+          padding:15px;
+          border-radius: 50px;
+          object-fit: none;
+        }
+
+    }
+        @include  pc-width{
+      width: 100%;
+         justify-content: center;
+        }
+      }
+      .section_3_box_2{
+        width: 40%;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+
+        & h2{
+          font-size: 32px;
+          font-weight: bold;
+          line-height: 2.5rem;
+          @include  pad-width{
+            font-size: 28px;
+          }
+        }
+        & p{
+          margin: 16px 0;
+          line-height: 1.7rem;
+          font-weight: 400;
+          font-size: 18px;
+          @include  pad-width{
+            font-size: 16px;
+          }
+        }
+
+        a{
+          background: #56C4C5;
+          color: #fff;
+          padding: 12px 32px;
+          display: block;
+          width: 136px;
+          border-radius: 20px;
+        }
+        @include  pc-width{
+          width: 100%;
+          text-align: center;
+          align-items: center;
+        }
+        @include  pad-width{
+          padding: 0 25px;
+        }
+      }
+      @include  pc-width{
+        flex-direction: column-reverse;
+            }
+
+    }
+    .section_4{
+      position: relative;
+      &::before{
+        content: "";
+        background-image: url(images/ball03.svg);
+        width: 152px;
+        height: 153px;
+        position: absolute;
+        left: 10%;
+        z-index: -9;
+      }
+      .section_4_card{
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        max-width: 1120px;
+        margin: auto;
+
+  
+        & p{
+          border-bottom: solid 1px #ddd;
+          padding:14px 0 24px 0;
+          line-height: 1.6rem;
+        }
+  
+        & h3{
+          font-weight: bold;
+          padding-top: 24px;
+        }
+        & h4{
+          padding: 8px 0;
+          width: 100%;
+        }
+  
+        .box_1{
+          width:calc(100%/3);
+          box-shadow: 0px 2px 10px #00000014;
+          position: relative;
+          padding:48px 32px 30px 32px;
+          border-radius: 10px;
+          margin: 79px 8px 30px 8px;
+          background: #fff;
+  
+          & .box-img{
+            border-radius: 50%;
+            width: 80px;
+            top: -40px;
+            position: absolute;
+          }
+          & .name_star{
+            display: flex;
+            & img{
+  
+              padding: 5px;
+  
+            }
+          }
+  
+        }
+      }
+    }
+    // 輪播
+    .responsive{
+      .btn_box{
+        display: flex !important;
+        width: 100%;
+        justify-content: center;
+      }
+
+        button{
+          font-size: 0;
+          margin: 0 5px;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+    background: #ddd;
+    border-radius: 50%;
+
+    &::before{
+      font-family: 'slick';
+      font-size: 6px;
+      line-height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      opacity: .25;
+      color: black;
+      -webkit-font-smoothing: antialiased;
+    }
+
+        }
+        .slick-active{
+          
+          button{
+            background: #FFD153;
+            width: 20px;
+            border-radius: 10px;
+          }
+        }
+
+    }
+    .section_5{
+      background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg);
+      width: 100%;
+      height: 503px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 50px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      justify-content: flex-end;
+      @include  pad-width{
+        background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      & h2{
+        font-size: 32px;
+        font-weight: bold;
+        margin-top: 140px;
+        @include  pad-width{
+          font-size: 24px;
+        }
+      }
+      & a{
+        background: #56C4C5;
+        color: #fff;
+        padding: 12px 32px;
+        font-size: 18px;
+        border-radius: 20px;
+        margin-bottom: 49px;
+        margin-top: 35px;
+      }
+      & p{
+        background: #F5F5F5;
+        color: #221E1F;
+        text-align: center;
+        width: 100%;
+        padding: 16px 0;
+
+      }
+
+
+    }
+}
+

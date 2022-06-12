@@ -1,0 +1,25 @@
+$font-family:'Noto Sans TC', sans-serif;
+$font-color-tiffany:#56C4C5;
+
+
+
+// rwd
+$pc-width: 996px;
+$pad-width: 768px;
+$ph-width: 414px;
+
+@mixin pc-width(){
+	@media screen and (max-width: $pc-width) {
+		@content;
+	}
+}
+@mixin pad-width(){
+	@media screen and (max-width: $pad-width) {
+		@content;
+	}
+}
+@mixin ph-width(){
+	@media screen and (max-width: $ph-width) {
+		@content;
+	}
+} 
