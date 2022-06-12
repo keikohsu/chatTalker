@@ -67,7 +67,7 @@ sub {
 
 .container .go_top {
   position: fixed;
-  background: url(images/top.png);
+  background: url(../images/top.png);
   width: 71px;
   height: 71px;
   bottom: 3%;
@@ -126,7 +126,7 @@ sub {
   background-repeat: no-repeat;
   width: 100%;
   height: 850px;
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg);
+  background-image: url(../images/bg_yellow.svg);
   background-position: right top;
 }
 
@@ -186,7 +186,7 @@ sub {
   .container .row_box .people_img {
     width: 100%;
     height: 305px;
-    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg);
+    background-image: url(../images/bg_home_sm.svg);
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: 32px;
@@ -279,7 +279,7 @@ sub {
 .container .box-icon::before {
   position: absolute;
   content: '';
-  background-image: url(images/ball01.svg);
+  background-image: url(../images/ball01.svg);
   width: 360px;
   height: 360px;
   left: -214px;
@@ -289,7 +289,7 @@ sub {
 .container .box-icon::after {
   position: absolute;
   content: '';
-  background-image: url(images/ball02.svg);
+  background-image: url(../images/ball02.svg);
   height: 317px;
   width: 317px;
   right: 10px;
@@ -590,7 +590,7 @@ sub {
 
 .container .section_4::before {
   content: "";
-  background-image: url(images/ball03.svg);
+  background-image: url(../images/ball03.svg);
   width: 152px;
   height: 153px;
   position: absolute;
@@ -702,11 +702,11 @@ sub {
 }
 
 .container .section_5 {
-  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg);
+  background: url(../images/home_footer.svg);
   width: 100%;
   height: 503px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   margin-top: 50px;
   position: relative;
   display: -webkit-box;
@@ -729,7 +729,7 @@ sub {
 
 @media screen and (max-width: 768px) {
   .container .section_5 {
-    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg);
+    background: url(../images/footer_sm.svg);
     background-repeat: no-repeat;
     background-size: contain;
   }
